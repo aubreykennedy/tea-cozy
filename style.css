@@ -1,0 +1,136 @@
+ * {
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+
+  /* enable flexbox */
+  display: flex;
+  /* space between logo and links */
+  justify-content: space-between;
+  /* vertical centering */
+  align-items: center;
+  /* add side padding */
+  padding: 0 20px;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: underline;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* fills container without stretching */
+  object-fit: cover;
+  z-index: 0;
+}
+
+.mission-text {
+  /* keeps it above background */
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  background-color: black;
+  color: seashell;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.monthly-tea-text {
+  text-align: center;
+}
+
+.monthly-tea {
+  display: flex;
+  flex-wrap: wrap;
+  /* center the items horizontally */
+  justify-content: center;
+  gap: 50px;
+  /* center the whole section */
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tea-item img {
+  display: inline;
+  height: 200px;
+  width: 300px;
+}
+
+.locations-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px; 
+  /* Padding for left/right margin. */
+  padding: 90px;
+  opacity: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.locations h2 {
+  position: static;
+  padding-top: 40px;
+  text-align: center;
+  color: seashell;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.locations img {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.locations {
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  height: 200px;
+}
+
+.copyright {
+  margin-left: 20px;
+}
